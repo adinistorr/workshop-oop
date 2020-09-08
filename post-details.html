@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Details</title>
+</head>
+<body>
+    <h1 data-post="title"></h1>
+    <h2 data-post="author"></h2>
+    <div data-post="body"></div>
+    <div data-post="comments"></div>
+    <form data-comment-form>
+        <p>
+            <label for="email">email</label>
+            <input type="text" name="email" id="email">
+        </p>
+        <p>
+            <label for="title">title</label>
+            <input type="text" name="title" id="title">
+        </p>
+        <p>
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </p>
+        <p><button data-comment-submit type="submit">Add a Comment</button></p>
+    </form>
+
+    <script src="scripts/posts.model.js"></script>
+    <script src="scripts/users.model.js"></script>
+    <script src="scripts/comments.model.js"></script>
+    <script src="scripts/post-details.js"></script>
+</body>
+</html>
